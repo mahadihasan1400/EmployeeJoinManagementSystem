@@ -1,0 +1,154 @@
+h1 {
+    color: #333 !important;
+}
+
+button i, a i {
+    padding-right: 5px;
+}
+
+.list-action a {
+    padding-right: 10px;
+}
+
+.list-action a:hover {
+    text-decoration: underline;
+}
+
+.content-header > .top-links {
+    background: transparent none repeat scroll 0 0;
+    border-radius: 2px;
+    float: right;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 7px 5px;
+    position: absolute;
+    right: 10px;
+    top: 15px;
+}
+
+.content-header > .top-links > li {
+    display:inline-block;
+    margin-right: 5px;
+    /*margin-top: 17px;*/
+}
+
+#btn-section a {
+    color: #ffffff !important;
+}
+
+/* PAGINATION */
+
+.pagination {
+    border-top: 0;
+    margin: 0;
+    padding: 0.3em 0.2em;
+    text-align: center;
+    /*-moz-box-shadow: 0 0 3px 1px #AAAAAA;*/
+    /*-webkit-box-shadow: 0 0 3px 1px #AAAAAA;*/
+    /*box-shadow: 0 0 3px 1px #AAAAAA;*/
+    background-color: #fcfcfc;
+    border: 1px solid #d3e4ec;
+    border-width: 0 1px 1px 1px;
+}
+
+.pagination a,
+.pagination .currentStep {
+    color: #367fa9;
+    display: inline-block;
+    margin: 0 0.1em;
+    padding: 0.25em 0.7em;
+    text-decoration: none;
+    -moz-border-radius: 0.3em;
+    -webkit-border-radius: 0.3em;
+    border-radius: 0.3em;
+}
+
+.pagination a:hover, .pagination a:focus,
+.pagination .currentStep {
+    background-color: #367fa9;
+    color: #ffffff;
+    outline: none;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+}
+
+.no-borderradius .pagination a:hover, .no-borderradius .pagination a:focus,
+.no-borderradius .pagination .currentStep {
+    background-color: transparent;
+    color: #444444;
+    text-decoration: underline;
+}
+
+.scroll-div {
+    border: 1px solid #CDCDCD;
+    height: 300px;
+    overflow-y: scroll;
+}
+
+/*start by mahua*/
+.isActive {
+    text-align: center;
+}
+
+.textBoxSize{
+    width: 100%;
+}
+
+/*end by mahua*/
+.has-error ul {
+    margin: 0;
+    padding: 0;
+}
+
+.has-error ul li {
+    list-style: none;
+    color: #dd4b39;
+}
+
+.required-indicator {
+    color: red;
+    display: inline-block;
+    font-weight: bold;
+    margin-left: 0.1em;
+    position: relative;
+    font-size: 14pt;
+}
+
+label.required:after {
+    content: '*';
+    color: red;
+    font-weight: bold;
+    padding-left: 3px;
+}
+
+.select2-container--default .select2-selection--single, .select2-container--default .select2-selection--multiple {
+    border-radius: 0 !important;
+}
+
+.select2-container .select2-selection--single {
+    height: 34px !important;
+}
+.blink {
+    animation: blink 1s steps(5, start) infinite;
+    -webkit-animation: blink 1s steps(5, start) infinite;
+}
+@keyframes blink {
+    to {
+        visibility: hidden;
+    }
+}
+@-webkit-keyframes blink {
+    to {
+        visibility: hidden;
+    }
+}
+.sidebar-menu, .main-sidebar .user-panel, .sidebar-menu > li.header {
+    white-space: normal;
+}
+
+.hiddenVal{ display: none; !important;}
+.error{
+	color: red;
+}
+.Editor-editorP{
+	background: white;
+}

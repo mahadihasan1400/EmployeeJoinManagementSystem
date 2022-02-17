@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC  "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+	<!-- Base Definition -->
+	<definition name="base-definition" template="/WEB-INF/tiles/template/template.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/tiles/template/header.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/tiles/template/menu.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/tiles/template/footer.jsp" />
+	</definition>
+
+	<definition name="base.definition2" template="/WEB-INF/views/login.jsp">
+		<put-attribute name="body" value=""></put-attribute>
+	</definition>
+
+	<!-- Login Page -->
+	<definition name="login" extends="base.definition2">
+		<put-attribute name="title" value="Login Form"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/views/login.jsp"></put-attribute>
+	</definition>
+
+	<!-- Home Page Start -->
+	<definition name="index" extends="base-definition">
+		<put-attribute name="title" value="Dashboard | JAMS" />
+		<put-attribute name="body" value="/WEB-INF/views/index.jsp" />
+	</definition>
+
+	<definition name="selectCompany" extends="base-definition">
+		<put-attribute name="title" value="Dashboard | JAMS" />
+		<put-attribute name="body" value="/WEB-INF/views/selectCompany.jsp" />
+	</definition>
+
+	<definition name="changePassword" extends="base-definition">
+		<put-attribute name="title" value="Change Password"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/views/changePassword.jsp"></put-attribute>
+	</definition>
+
+	<definition name="home" extends="base-definition">
+		<put-attribute name="title" value="Dashboard | PAF" />
+		<put-attribute name="body" value="/WEB-INF/views/home.jsp" />
+	</definition>
+
+	<definition name="myProfile" extends="base-definition">
+		<put-attribute name="title" value="My Profile" />
+		<put-attribute name="body" value="/WEB-INF/views/myProfile.jsp" />
+	</definition>
+	<!-- Home Page End -->
+
+	<!-- Company Start -->
+	<definition name="addCompany" extends="base-definition">
+		<put-attribute name="title" value="Add New Company" />
+		<put-attribute name="body" value="/WEB-INF/views/company/create.jsp" />
+	</definition>
+
+	<definition name="editCompany" extends="base-definition">
+		<put-attribute name="title" value="Edit Company" />
+		<put-attribute name="body" value="/WEB-INF/views/company/edit.jsp" />
+	</definition>
+
+	<definition name="companyList" extends="base-definition">
+		<put-attribute name="title" value="Company List" />
+		<put-attribute name="body" value="/WEB-INF/views/company/list.jsp" />
+	</definition>
+
+	<definition name="showCompany" extends="base-definition">
+		<put-attribute name="title" value="Show Company" />
+		<put-attribute name="body" value="/WEB-INF/views/company/show.jsp" />
+	</definition>
+	<!-- Company End -->
+
+	<!-- Fiscal Year Start -->
+	<definition name="addFiscalYear" extends="base-definition">
+		<put-attribute name="title" value="Add New Fiscal Year" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/fiscalYear/create.jsp" />
+	</definition>
+
+	<definition name="editFiscalYear" extends="base-definition">
+		<put-attribute name="title" value="Edit Fiscal Year" />
+		<put-attribute name="body" value="/WEB-INF/views/fiscalYear/edit.jsp" />
+	</definition>
+
+	<definition name="fiscalYearList" extends="base-definition">
+		<put-attribute name="title" value="Fiscal Year List" />
+		<put-attribute name="body" value="/WEB-INF/views/fiscalYear/list.jsp" />
+	</definition>
+
+	<definition name="showFiscalYear" extends="base-definition">
+		<put-attribute name="title" value="Show Fiscal Year" />
+		<put-attribute name="body" value="/WEB-INF/views/fiscalYear/show.jsp" />
+	</definition>
+	<!-- PAF Year End -->
+
+	<!-- Job Settings Start -->
+	<definition name="addJobSettings" extends="base-definition">
+		<put-attribute name="title" value="Add New Job Settings" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/jobSettings/create.jsp" />
+	</definition>
+
+	<definition name="editJobSettings" extends="base-definition">
+		<put-attribute name="title" value="Edit Job Settings" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/jobSettings/edit.jsp" />
+	</definition>
+
+	<definition name="jobSettingsList" extends="base-definition">
+		<put-attribute name="title" value="Job Settings List" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/jobSettings/list.jsp" />
+	</definition>
+
+	<definition name="showJobSettings" extends="base-definition">
+		<put-attribute name="title" value="Show Job Settings" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/jobSettings/show.jsp" />
+	</definition>
+	<!-- Job Settings End -->
+
+	<!-- Job Advance Start -->
+	<definition name="addJobAdvance" extends="base-definition">
+		<put-attribute name="title" value="Add New Job Advance" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/jobAdvance/create.jsp" />
+	</definition>
+
+	<definition name="editJobAdvance" extends="base-definition">
+		<put-attribute name="title" value="Edit Job Advance" />
+		<put-attribute name="body" value="/WEB-INF/views/jobAdvance/edit.jsp" />
+	</definition>
+
+	<definition name="jobAdvanceList" extends="base-definition">
+		<put-attribute name="title" value="Job Advance List" />
+		<put-attribute name="body" value="/WEB-INF/views/jobAdvance/list.jsp" />
+	</definition>
+
+	<definition name="allJobList" extends="base-definition">
+		<put-attribute name="title" value="All Job Request List" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/jobAdvance/allJobList.jsp" />
+	</definition>
+
+	<definition name="pendingJobList" extends="base-definition">
+		<put-attribute name="title" value="Pending Job Request List" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/jobAdvance/pendingJobList.jsp" />
+	</definition>
+
+	<definition name="rejectedJobList" extends="base-definition">
+		<put-attribute name="title" value="Rejected Job Request List" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/jobAdvance/rejectedJobList.jsp" />
+	</definition>
+
+	<definition name="approvedJobList" extends="base-definition">
+		<put-attribute name="title" value="Approved Job Request List" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/jobAdvance/approvedJobList.jsp" />
+	</definition>
+
+	<definition name="showJobAdvance" extends="base-definition">
+		<put-attribute name="title" value="Show Job Advance" />
+		<put-attribute name="body" value="/WEB-INF/views/jobAdvance/show.jsp" />
+	</definition>
+
+	<definition name="myJobsList" extends="base-definition">
+		<put-attribute name="title" value="My Job List" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/jobAdvance/myJobsList.jsp" />
+	</definition>
+	<!-- Job Advance End -->
+
+	<!-- Job Advance Dashboard Start -->
+	<definition name="userDashboard" extends="base-definition">
+		<put-attribute name="title" value="User Dashboard" />
+		<put-attribute name="body" value="/WEB-INF/views/userDashboard.jsp" />
+	</definition>
+
+	<definition name="concernDashboard" extends="base-definition">
+		<put-attribute name="title" value="Concern Dashboard" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/concernDashboard.jsp" />
+	</definition>
+
+	<definition name="adminDashboard" extends="base-definition">
+		<put-attribute name="title" value="Administrator Dashboard" />
+		<put-attribute name="body" value="/WEB-INF/views/adminDashboard.jsp" />
+	</definition>
+
+	<definition name="jobAdvanceReportForm" extends="base-definition">
+		<put-attribute name="title" value="JobAdvance Report Form" />
+		<put-attribute name="body" value="/WEB-INF/views/report/create.jsp" />
+	</definition>
+
+
+
+	<definition name="addDepartmentForm" extends="base-definition">
+		<put-attribute name="title" value="JobAdvance Report Form" />
+		<put-attribute name="body" value="/WEB-INF/views/add-department.jsp" />
+	</definition>
+
+	<definition name="departmentListForm" extends="base-definition">
+		<put-attribute name="title" value="JobAdvance Report Form" />
+		<put-attribute name="body" value="/WEB-INF/views/department-list.jsp" />
+	</definition>
+
+	<definition name="districtList" extends="base-definition">
+		<put-attribute name="title" value="JobAdvance Report Form" />
+		<put-attribute name="body" value="/WEB-INF/views/district-list.jsp" />
+	</definition>
+
+	<definition name="addDistrictForm" extends="base-definition">
+		<put-attribute name="title" value="JobAdvance Report Form" />
+		<put-attribute name="body" value="/WEB-INF/views/add-district.jsp" />
+	</definition>
+
+	<definition name="addThanaForm" extends="base-definition">
+		<put-attribute name="title" value="JobAdvance Report Form" />
+		<put-attribute name="body" value="/WEB-INF/views/add-thana.jsp" />
+	</definition>
+
+	<definition name="thanaList" extends="base-definition">
+		<put-attribute name="title" value="JobAdvance Report Form" />
+		<put-attribute name="body" value="/WEB-INF/views/thana-list.jsp" />
+	</definition>
+
+	<definition name="applicationForm" extends="base-definition">
+		<put-attribute name="title" value="JobAdvance Report Form" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/application-form.jsp" />
+	</definition>
+
+	<definition name="applicantList" extends="base-definition">
+		<put-attribute name="title" value="JobAdvance Report Form" />
+		<put-attribute name="body" value="/WEB-INF/views/applicant-list.jsp" />
+	</definition>
+
+
+
+	<definition name="viewCandidateInfo" extends="base-definition">
+		<put-attribute name="title" value="JobAdvance Report Form" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/viewCandidateInfo.jsp" />
+	</definition>
+
+
+
+
+	<definition name="viewAcademicInfo" extends="base-definition">
+		<put-attribute name="title" value="JobAdvance Report Form" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/viewAcademicInfo.jsp" />
+	</definition>
+
+
+	<definition name="viewEmploymentInfo" extends="base-definition">
+		<put-attribute name="title" value="JobAdvance Report Form" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/viewEmploymentInfo.jsp" />
+	</definition>
+
+
+	<!-- Store Supervision Dashboard End -->
+
+
+
+
+
+
+
+</tiles-definitions>
